@@ -4,7 +4,6 @@ import { createContext, useState } from "react";
 export const cartContext = createContext();
 export default function CartContextProvider(props) {
    let baseUrl = 'https://ecommerce.routemisr.com'
-
     const [cartNumber, setCartNumber] = useState(0);
   function addToCart(id) {
     return axios.post(
