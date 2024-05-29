@@ -55,7 +55,7 @@ function Signin() {
 
   return (
     <div className="my-3">
-      <h1 className="text-main text-center">Login Form</h1>
+      <h3 className="text-main text-center">Login Form</h3>
       <form onSubmit={formik.handleSubmit}>
         <div className="row mt-4">
           <div className="col-md-8 m-auto bg-light shadow p-4 ">
@@ -105,10 +105,14 @@ function Signin() {
                   )}
                 </button>
               </div>
-              <p className="text-muted">
+              <p className="text-muted ">
                 Have an account?
                 <Link to="/signup" className="text-main mx-1">
                   Sign up now
+                </Link>
+                <br />
+                <Link to="/forgotPassword" className="text-main mx-1 ">
+                  Forgot Password...
                 </Link>
               </p>
             </div>
